@@ -1,0 +1,167 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+$link-water: #DAE8F5;
+$glitter: #E6F0F9;
+$glaucous: #5882B6;
+$kashmire-blue: #4A7090;
+
+$chalet-green: #5C7439;
+$myrtle: #27431A;
+$mallard: #1F3715;
+
+
+$primary-color: $chalet-green;
+$primary-accent-color: $myrtle;
+
+$secondary-color: $glaucous;
+
+$background-color: $glitter;
+
+$text-color: #212121;
+$secondary-text-color: #727272;
+
+body {
+  background-color: $background-color;
+}
+
+header {
+  background-image: url('../images/header-photo.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-color: $primary-color;
+  padding: 25px;
+  height: 350px;
+  text-align: center;
+}
+
+.my-name {
+  padding-top: 130px;
+  font-size: 3.5em;
+}
+
+.my-title {
+  padding-top: 5px;
+  font-size: 1em;
+}
+
+.top-nav {
+  /* @include outer-container(width 100%); */
+  border-bottom: solid $secondary-color 2px;
+  background-color: $primary-color;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.top-nav-link {
+/*   @include span-columns(3);
+@include shift(1); */
+  display: inline-block;
+  margin-top: 16px;
+  /* border: solid white 3px; */
+  width: 33%;
+  color: white;
+  font-size: 1.5em;
+}
+
+.profile-container {
+  @include outer-container;
+}
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 35px;
+  border-bottom: solid $primary-accent-color 10px;
+  padding-top: 150px;
+  color: $secondary-text-color;
+}
+
+.profile-left {
+  @include span-columns(3);
+  text-align: center;
+}
+
+.profile-photo {
+  @include span-columns(3 of 3);
+  border: solid white 3px;
+  border-radius: 3%;
+}
+
+.profile-name {
+  @include span-columns(3 of 3);
+  padding-top: 15px;
+  color: $text-color;
+}
+
+.bio {
+  @include span-columns(7);
+  padding: 1em;
+}
+
+.work-container {
+  @include outer-container;
+}
+
+.work-example {
+  @include span-columns(6);
+}
+
+.work-example-title {
+  margin-bottom: 15px;
+}
+
+.work-image {
+  @include span-columns(3.5 of 6);
+  border: solid white 3px;
+  border-radius: 3%;
+}
+
+.first-contact-container {
+  @include outer-container;
+  margin-bottom: 25px;
+}
+
+.first-row-icon {
+  @include span-columns(3);
+  text-align: center;
+  color: $secondary-color;
+  font-size: 50px;
+}
+
+.second-contact-container {
+  @include outer-container;
+  margin-bottom: 50px;
+}
+
+.second-row-icon {
+  @include span-columns(5);
+  text-align: center;
+  color: $secondary-color;
+  font-size: 35px;
+}
+
+.thanks {
+  display: block;
+  margin: 25px auto;
+  background-color: $background-color;
+  padding: 25px;
+  width: 80%;
+  color: $text-color;
+  font-size: 25px;
+}
