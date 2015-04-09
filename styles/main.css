@@ -16,6 +16,7 @@ html {
   box-sizing: border-box; }
 
 /* COLORS */
+/* LAYOUT */
 a,
 p,
 i {
@@ -50,6 +51,9 @@ footer {
   padding: 25px;
   height: 350px;
   text-align: center; }
+  @media screen and (max-width: 840px) {
+    footer {
+      height: 500px; } }
 
 .my-name {
   padding-top: 130px;
@@ -69,14 +73,14 @@ footer {
   text-align: center; }
 
 .top-nav-link {
-  /*   @include span-columns(3);
-  @include shift(1); */
   display: inline-block;
   margin-top: 16px;
-  /* border: solid white 3px; */
   width: 33%;
   color: white;
   font-size: 1.5em; }
+  @media screen and (max-width: 840px) {
+    .top-nav-link {
+      width: 25%; } }
 
 .title {
   margin-top: 100px;
@@ -84,6 +88,16 @@ footer {
   border-bottom: solid #27431A 10px;
   padding-top: 150px;
   color: #727272; }
+  @media screen and (max-width: 840px) {
+    .title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      padding-top: 0; }
+      .title:last-child {
+        margin-right: 0; } }
 
 .profile-container {
   max-width: 68em;
@@ -102,6 +116,15 @@ footer {
   text-align: center; }
   .profile-left:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .profile-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 25.58941%; }
+      .profile-left:last-child {
+        margin-right: 0; } }
 
 .profile-photo {
   float: left;
@@ -132,6 +155,15 @@ footer {
   font-size: 20px; }
   .bio:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .bio {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .bio:last-child {
+        margin-right: 0; } }
 
 .work-container {
   max-width: 68em;
@@ -150,10 +182,22 @@ footer {
   margin-bottom: 50px; }
   .work-example:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .work-example {
+      text-align: center; } }
 
 .work-example-title {
   margin-bottom: 15px;
   font-size: 25px; }
+  @media screen and (max-width: 840px) {
+    .work-example-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .work-example-title:last-child {
+        margin-right: 0; } }
 
 .work-image {
   float: left;
@@ -165,6 +209,15 @@ footer {
   border-radius: 3%; }
   .work-image:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .work-image {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .work-image:last-child {
+        margin-right: 0; } }
 
 .work-description {
   float: left;
@@ -182,6 +235,16 @@ footer {
     color: #212121; }
   .work-description a:hover {
     color: #5C7439; }
+  @media screen and (max-width: 840px) {
+    .work-description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      text-align: justify; }
+      .work-description:last-child {
+        margin-right: 0; } }
 
 .work-links {
   display: inline-block;
@@ -223,6 +286,15 @@ footer {
     margin-right: 0; }
   .first-row-icon:hover {
     color: #5C7439; }
+  @media screen and (max-width: 840px) {
+    .first-row-icon {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-left: 8.5298%; }
+      .first-row-icon:last-child {
+        margin-right: 0; } }
 
 .second-contact-container {
   max-width: 68em;
@@ -248,14 +320,27 @@ footer {
     margin-right: 0; }
   .second-row-icon:hover {
     color: #5C7439; }
+  @media screen and (max-width: 840px) {
+    .second-row-icon {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      margin-bottom: 20px; }
+      .second-row-icon:last-child {
+        margin-right: 0; } }
 
 .thanks {
   display: block;
   margin: 25px auto;
   background-color: #E6F0F9;
   padding: 25px;
-  width: 80%;
+  width: 60%;
   color: #212121;
   font-size: 25px; }
+  @media screen and (max-width: 840px) {
+    .thanks {
+      width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
